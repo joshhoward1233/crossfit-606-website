@@ -1,3 +1,29 @@
+.contact-li-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%; /* ensures full width for internal alignment */
+    max-width: 280px; /* optional: limits width for consistent centering */
+}
+
+.contact-item i {
+    min-width: 1.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
 /* Custom CSS */
 
 #googleMap {
