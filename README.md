@@ -31,7 +31,7 @@
 
 ### Links
 
-- [Live 🔗](https://basketball-scoreboard-joshhoward.netlify.app/)
+- [Live 🔗](https://joshhoward1233.github.io/crossfit-606-website/)
 
 ## My process
 
