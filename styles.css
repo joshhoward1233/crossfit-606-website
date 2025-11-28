@@ -1,31 +1,296 @@
-.contact-li-centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    padding: 0;
+  * {
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  :root{
+    --crossfit-red: #f00800;
+    --crossfit-blue: #010044;
+  }
+
+
+  .big-shoulders-500 {
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .big-shoulders-900 {
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .nav  {
+    color: white;
+    background-color: var(--crossfit-red);
+    font-weight: 900;
+  }
+
+  .nav a:hover  {
+    background-color: var(--crossfit-blue)!important;
+    color: white!important;
+  }
+
+  .nav .logo  {
+    width: 4rem;
     margin: 0;
-    list-style: none;
-    gap: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navDemo  {
+    color: white;
+    background-color: var(--crossfit-red);
+  }
+
+  .navDemo a:hover  {
+    background-color: var(--crossfit-blue)!important;
+    color: white!important;
+  }
+
+  .w3-dropdown-hover:hover > .w3-button:first-child,
+  .w3-dropdown-click:hover > .w3-button:first-child {
+    background-color: var(--crossfit-blue)!important;
+    color: white!important;
+  }
+
+  .journal-img  {
+    max-width: 75%;
+  }
+
+  .wod  {
+    color: black;
+    font-size: 1.5em;
+  }
+
+  .wod h2 {
+    font-size:2em;
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .schedule {
+    color: white;
+    background-color: var(--crossfit-blue);
+    font-size: 1.5em;
+  }
+
+  .schedule h2  {
+    font-size: 2em;
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .about  {
+    color: black;
+    max-height: auto!important;
+    font-size: 1.5em;
+  }
+
+  .about h2 {
+    font-size: 2em;
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .card {
+    max-height: auto!important;
+  }
+
+  .card hr  {
+    border: 1px solid black;
+    border-radius: 0px;
+  }
+
+  .contact  {
+    color: white;
+    background-color: var(--crossfit-red);
+    font-size: 1.5em;
+  }
+
+  .contact h2 {
+    font-size: 2em;
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .contact button {
+    background-color: var(--crossfit-blue);
+  }
+
+  .contact-li-centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      gap: 1rem;
+  }
+
+  .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      width: 100%; /* ensures full width for internal alignment */
+      max-width: 280px; /* optional: limits width for consistent centering */
+  }
+
+  .contact-item i {
+      min-width: 1.2rem;
+      font-size: 1.2rem;
+      color: #fff;
+  }
+
+  footer  {
+    color: white;
+    background-color: var(--crossfit-blue);
+  }
+
+  .footer-container  {
+    padding-top: 2%;;
+  }
+
+  .footer-journal-img {
+    max-width: 20%;
+  }
+
+/* COACHES SLIDESHOW CSS */
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+
+  .mySlideshow {
+    display: none;
+  }
+
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Position the "prev button" to the left */
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+      color: white;
+      background-color: rgba(0,0,0,0.8);
+  }
+
+
+  /* Caption text */
+  /*
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  /*
+
+  /* Number text (1/3 etc) */
+  /*
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  */
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--crossfit-blue);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: var(--crossfit-red);
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+  .nav .logo  {
+    display: none;
+  }
+
+  .journal-img  {
+    max-width: 50%;
+  }
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    width: 100%; /* ensures full width for internal alignment */
-    max-width: 280px; /* optional: limits width for consistent centering */
-}
+@media screen and (max-width: 600px) {
+  .nav .logo  {
+    display: block;
+  }
 
-.contact-item i {
-    min-width: 1.2rem;
-    font-size: 1.2rem;
-    color: #fff;
-}
-
-
-/* Custom CSS */
-
-#googleMap {
-    margin:0 auto;
+  .journal-img  {
+    max-width: 50%;
+  }
 }
