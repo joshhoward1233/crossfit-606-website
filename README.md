@@ -15,7 +15,7 @@
 
 ## Figma Design
 
-- [Basketball Scoreboard Design File](https://www.figma.com/file/YC48MCx4frBFtYoz6rNJE6/Basketball-Scoreboard?node-id=0%3A1)
+- [CrossFit 606 Wesbite Design File](https://www.figma.com)
 
 ## Overview
 
@@ -40,7 +40,7 @@
 - HTML5
 - CSS3
 - JavaScript
-- Sublime Text 3
+- Visual Studio Code
 
 ### Built With
 
